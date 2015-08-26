@@ -132,7 +132,7 @@ func GetTmp(file string) string {
 
 func GetTexEngine() string {
 	tex := "pdflatex"
-	if t := os.Getenv("TEX"); t != "" {
+	if t := os.Getenv("PDFTEX"); t != "" {
 		tex = t
 	}
 	return tex
